@@ -10,3 +10,12 @@ $conn = new PDO(
 
 
 
+$query = 'SELECT * FROM users';
+$stmt = $conn->prepare($query);
+$stmt->execute(array());
+echo "Users:<br><ul>";
+if ($row = $stmt->fetch())
+{
+	echo "<li>".$row['id'].")  ".$row['email']."</li>";
+}
+echo "</ul>";
