@@ -36,3 +36,6 @@ Apply sql file for creating structure of tables:
 	$ ln -s `pwd`/www /var/www/html/someproject
 	$ sudo cp www/config.php.example www/config.php 
 	
+## Where see
+
+	http://localhost/someproject/
